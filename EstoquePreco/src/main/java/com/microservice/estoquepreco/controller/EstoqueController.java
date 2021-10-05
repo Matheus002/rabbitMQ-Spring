@@ -1,7 +1,5 @@
 package com.microservice.estoquepreco.controller;
 
-import com.microservice.estoquepreco.contantes.RabbitMQConstantes;
-import com.microservice.estoquepreco.dto.EstoqueDTO;
 import com.microservice.estoquepreco.service.RabbitMQService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -10,6 +8,8 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import contantes.RabbitMQConstantes;
+import dto.EstoqueDTO;
 
 @RestController
 @RequestMapping(value = "estoque")
